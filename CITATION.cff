@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "GateFM: supervised third-order factorization for three-SNP hypothesis prioritization"
+repository-code: "https://github.com/rifkyariy/hypertension-snp"
+authors:
+  - family-names: Huang
+    given-names: Shih-Hung
+  - family-names: Wang
+    given-names: Yi-Chih
+  - family-names: Yunanto
+    given-names: Rifky Ari
+  - family-names: Leu
+    given-names: Jenq-Shiou
+  - family-names: Tsai
+    given-names: Chia-Ti
+preferred-citation:
+  type: article
+  title: "Supervised Third-Order Factorization for High-Dimensional Three-SNP Hypothesis Prioritization in Hypertension"
+  authors:
+    - family-names: Huang
+      given-names: Shih-Hung
+    - family-names: Wang
+      given-names: Yi-Chih
+    - family-names: Yunanto
+      given-names: Rifky Ari
+    - family-names: Leu
+      given-names: Jenq-Shiou
+    - family-names: Tsai
+      given-names: Chia-Ti
