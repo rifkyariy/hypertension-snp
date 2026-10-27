@@ -54,6 +54,7 @@ For the 14,313-SNP hypertension cohort, `C(14313,3) ≈ 4.89 × 10¹¹` triples 
 hypertension-snp/
 ├── README.md
 ├── CITATION.cff
+├── code/                 # original GateFM source code (to be added by Shih-Hung Huang)
 └── docs/
     ├── METHOD.md
     ├── DATASETS.md
