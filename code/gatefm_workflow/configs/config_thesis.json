@@ -1,0 +1,131 @@
+{
+  "model": {
+    "latent_rank": 20,
+    "gate_activation": "hard_sigmoid",
+    "gate_temperature": 0.7,
+    "gate_init": 0.05,
+    "embedding_init_std": 0.1,
+    "gamma_tri": 0.05
+  },
+  "training": {
+    "epochs": 300,
+    "batch_size": 128,
+    "model_learning_rate": 0.0001,
+    "gate_learning_rate": 0.001,
+    "gate_learning_rate_schedule": [
+      {"start_epoch": 1, "learning_rate": 0.0001},
+      {"start_epoch": 50, "learning_rate": 0.0002},
+      {"start_epoch": 150, "learning_rate": 0.0005},
+      {"start_epoch": 200, "learning_rate": 0.001}
+    ],
+    "weight_decay": 0.0001,
+    "validation_fraction": 0.1,
+    "split_seed": 42,
+    "sort_split_indices": false,
+    "dedicated_loader_generator": false,
+    "checkpoint_metric": "final_epoch",
+    "deterministic": true,
+    "num_workers": 0
+  },
+  "gate_constraint": {
+    "lambda": 0.001,
+    "target_start": "half_n_snps",
+    "target_end": 3.0,
+    "anneal_fraction": 0.9,
+    "anneal_power": 1.0
+  },
+  "stage2": {
+    "top_k": 30,
+    "chi_square_yates_correction": false,
+    "zero_cell_correction": 0.5
+  },
+  "dimension_overrides": {
+    "20": {
+      "model": {
+        "latent_rank": 16
+      },
+      "training": {
+        "batch_size": 64,
+        "gate_learning_rate_schedule": null
+      },
+      "gate_constraint": {
+        "target_start": "n_snps"
+      }
+    },
+    "100": {
+      "model": {
+        "latent_rank": 32
+      },
+      "training": {
+        "batch_size": 64,
+        "gate_learning_rate_schedule": null
+      },
+      "gate_constraint": {
+        "target_start": "n_snps",
+        "target_end": 10.0
+      }
+    },
+    "500": {
+      "model": {
+        "latent_rank": 256
+      },
+      "training": {
+        "batch_size": 64,
+        "gate_learning_rate_schedule": null
+      },
+      "gate_constraint": {
+        "target_end": 50.0
+      }
+    },
+    "1000": {
+      "model": {
+        "latent_rank": 256
+      },
+      "training": {
+        "batch_size": 64,
+        "gate_learning_rate_schedule": [
+          {"start_epoch": 1, "learning_rate": 0.0001},
+          {"start_epoch": 50, "learning_rate": 0.0002},
+          {"start_epoch": 150, "learning_rate": 0.0005},
+          {"start_epoch": 200, "learning_rate": 0.001}
+        ]
+      },
+      "gate_constraint": {
+        "target_end": 100.0
+      }
+    },
+    "5000": {
+      "model": {
+        "latent_rank": 512
+      },
+      "training": {
+        "batch_size": 64,
+        "gate_learning_rate_schedule": [
+          {"start_epoch": 1, "learning_rate": 0.0001},
+          {"start_epoch": 50, "learning_rate": 0.0002},
+          {"start_epoch": 150, "learning_rate": 0.0005},
+          {"start_epoch": 200, "learning_rate": 0.001}
+        ]
+      },
+      "gate_constraint": {
+        "target_end": 500.0
+      }
+    },
+    "10000": {
+      "model": {
+        "latent_rank": 1024
+      },
+      "training": {
+        "epochs": 100,
+        "batch_size": 16,
+        "gate_learning_rate_schedule": [
+          {"start_epoch": 1, "learning_rate": 0.0001},
+          {"start_epoch": 50, "learning_rate": 0.0002}
+        ]
+      },
+      "gate_constraint": {
+        "target_end": 1000.0
+      }
+    }
+  }
+}

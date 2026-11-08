@@ -1,0 +1,24 @@
+{
+  "synthetic": {
+    "dimensions": [20, 100, 500, 1000, 5000, 10000],
+    "data_seeds": [42, 100, 200, 300, 400],
+    "model_initialization_seeds": [3484015997, 3484015998, 3484015999],
+    "stage2_rule": "run separately for each Stage-1 fit using that fit's q_rank and representative_genotype"
+  },
+  "human": {
+    "model_initialization_seeds": [
+      3484015997,
+      3484015998,
+      3484015999,
+      3484016000,
+      3484016001,
+      3484016002,
+      3484016003,
+      3484016004,
+      3484016005,
+      3484016006
+    ],
+    "consensus_runs": 10,
+    "stage2_top_k": 30
+  }
+}
