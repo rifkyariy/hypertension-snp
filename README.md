@@ -131,8 +131,26 @@ hypertension-snp/
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Archived release DOI: *[to confirm]*.
+The manuscript is in preparation and has no DOI yet. Until a journal citation is available, please cite:
+
+> Huang S-H, Wang Y-C, Yunanto RA, Leu J-S, Tsai C-T. Supervised third-order factorization for
+> high-dimensional three-SNP hypothesis prioritization in hypertension. Manuscript in preparation, 2026.
+
+```bibtex
+@unpublished{huang2026gatefm,
+  author = {Huang, Shih-Hung and Wang, Yi-Chih and Yunanto, Rifky Ari and Leu, Jenq-Shiou and Tsai, Chia-Ti},
+  title  = {Supervised third-order factorization for high-dimensional three-{SNP} hypothesis prioritization in hypertension},
+  note   = {Manuscript in preparation},
+  year   = {2026}
+}
+```
+
+Citation metadata is also in [CITATION.cff](CITATION.cff).
 
 ## License
 
-*[to confirm]*
+© The Author(s) 2026. All rights reserved. No open-source license has been granted: copying, modifying or
+redistributing this code or documentation requires permission from the authors.
+
+Taiwan Biobank data are not covered by this repository and remain subject to the biobank's own access terms.
+See [DATA_ACCESS.md](code/gatefm_workflow/docs/DATA_ACCESS.md).
