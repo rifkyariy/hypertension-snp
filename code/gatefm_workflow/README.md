@@ -234,4 +234,4 @@ Stage 2 results are candidate genotype-pattern associations. Independent dataset
 
 When referencing this implementation, use the associated manuscript title above; journal citation information can be added following publication. Clinical data are handled separately under applicable access permissions. See [Data access](docs/DATA_ACCESS.md).
 
-The repository is private, and a public redistribution license has not yet been specified.
+The repository is public, but no open-source license has been granted. See the [license statement](../../README.md#license).
